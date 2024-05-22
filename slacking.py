@@ -12,11 +12,11 @@ ONE_MINUTE_IN_SECONDS = 60
 ONE_SIXTH_OF_A_MINUTE = 10
 
 
-def moveMouseToRandomPos():
+def moveMouseToRandomPosition():
 	gui.moveTo(randrange(SCREEN_WIDTH), randrange(SCREEN_HEIGHT), 0.5, gui.easeInOutQuad)
 	gui.moveTo(randrange(SCREEN_WIDTH), randrange(SCREEN_HEIGHT), 0.5, gui.easeInOutQuad)
 
-def altTab(tabPressCount: int):
+def switchTask(tabPressCount: int):
 	tabPressQueue: list[str] = ['tab' for i in range(tabPressCount)]
 	with gui.hold('command') or gui.hold('tab'):
 		gui.press(tabPressQueue)
@@ -88,7 +88,7 @@ def main():
 		print(f'Slack for {numMinutes} minute(s)...')
 			
 		for i in range(numMinutes * ONE_SIXTH_OF_A_MINUTE):
-			moveMouseToRandomPos()
+			moveMouseToRandomPosition()
 			sleep(ONE_MINUTE_IN_SECONDS / ONE_SIXTH_OF_A_MINUTE)
 	except KeyboardInterrupt:
 		print('\r')
