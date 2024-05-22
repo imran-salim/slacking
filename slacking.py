@@ -18,7 +18,7 @@ def moveMouseToRandomPosition():
 
 def switchTask(tabPressCount: int):
 	tabPressQueue: list[str] = ['tab' for i in range(tabPressCount)]
-	with gui.hold('command') or gui.hold('tab'):
+	with gui.hold('command') or gui.hold('alt'):
 		gui.press(tabPressQueue)
 
 def stopSlacking():
