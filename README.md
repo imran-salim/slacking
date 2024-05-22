@@ -41,4 +41,4 @@ y or n
 
 ---
 ### Disclaimer
-Do not actually use this script at work
+Do not actually use this script at work.
