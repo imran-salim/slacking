@@ -1,6 +1,8 @@
 # Slacking
 Maintain your online active status on Slack while AFK.
 
+This project does not currently work, as far as I am aware.
+
 ---
 ### Installation
 Clone this repository
